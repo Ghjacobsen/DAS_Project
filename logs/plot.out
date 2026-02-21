@@ -1,0 +1,93 @@
+=== Plotting 150005.hdf5 → 150605.hdf5 ===
+Raw dir:   /work3/s214374/DASProject/DASProject/data/raw/test
+Recon dir: /work3/s214374/DASProject/DASProject/data/reconstructions
+Range:     150005.hdf5 → 150605.hdf5
+Found 37 file pairs in range [150005.hdf5 → 150605.hdf5]
+Stitched shape: (29600, 3906)  |  Time: 15:00:05 → 15:06:15
+  Saved: /work3/s214374/DASProject/DASProject/reports/figures/Original_150005_150605.png
+  Saved: /work3/s214374/DASProject/DASProject/reports/figures/Reconstruction_150005_150605.png
+Done.
+=== Done ===
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 27820458: <DAS_Plot> in cluster <dcc> Done
+
+Job <DAS_Plot> was submitted from host <hpclogin1> by user <s214374> in cluster <dcc> at Tue Feb 17 09:58:22 2026
+Job was executed on host(s) <4*n-62-28-29>, in queue <hpc>, as user <s214374> in cluster <dcc> at Tue Feb 17 09:58:24 2026
+</zhome/02/6/167678> was used as the home directory.
+</work3/s214374/DASProject/DASProject> was used as the working directory.
+Started at Tue Feb 17 09:58:24 2026
+Terminated at Tue Feb 17 10:01:52 2026
+Results reported at Tue Feb 17 10:01:52 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+### ============================================================
+### LSF Batch Script — One-off plotting job
+### 
+### Usage:
+###   bsub < batch/plot.sh
+###
+### Edit START_FILE and END_FILE below before submitting.
+### ============================================================
+
+#BSUB -J DAS_Plot
+#BSUB -q hpc
+#BSUB -n 4
+#BSUB -R "rusage[mem=8GB]"
+#BSUB -R "span[hosts=1]"
+#BSUB -W 1:00
+#BSUB -o /work3/s214374/DASProject/DASProject/logs/plot.out
+#BSUB -e /work3/s214374/DASProject/DASProject/logs/plot.err
+
+### ── EDIT THESE ─────────────────────────────────────────────
+START_FILE="150005.hdf5"
+END_FILE="150605.hdf5"
+### ───────────────────────────────────────────────────────────
+
+### --- Environment ---
+module load python3/3.11.11
+export PYTHONUNBUFFERED=1
+
+cd /work3/s214374/DASProject/DASProject
+source .venv/bin/activate
+mkdir -p logs reports/figures
+
+> /work3/s214374/DASProject/DASProject/logs/plot.out
+> /work3/s214374/DASProject/DASProject/logs/plot.err
+
+
+### --- Run ---
+echo "=== Plotting $START_FILE → $END_FILE ==="
+python3 scripts/plot_reconstructions.py "$START_FILE" "$END_FILE"
+echo "=== Done ==="
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   200.93 sec.
+    Max Memory :                                 16936 MB
+    Average Memory :                             13148.25 MB
+    Total Requested Memory :                     32768.00 MB
+    Delta Memory :                               15832.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   213 sec.
+    Turnaround time :                            210 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </work3/s214374/DASProject/DASProject/logs/plot.err> for stderr output of this job.
+

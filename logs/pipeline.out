@@ -1,0 +1,253 @@
+=== GPU Info ===
+Sat Feb 21 21:00:53 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.126.16             Driver Version: 580.126.16     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Tesla V100-PCIE-16GB           On  |   00000000:37:00.0 Off |                    0 |
+| N/A   34C    P0             25W /  250W |       0MiB /  16384MiB |      0%   E. Process |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+PyTorch 2.6.0+cu124
+CUDA available: True
+Device: Tesla V100-PCIE-16GB
+=== Starting Pipeline ===s
+2026-02-21 21:01:05,326 - INFO - root - Logging set up. Writing to logs/dasproject.log
+2026-02-21 21:01:05,327 - INFO - __main__ - --- Pipeline Started ---
+2026-02-21 21:01:05,328 - INFO - __main__ - Step 1: Hyperparameter Search & Training
+2026-02-21 21:01:05,355 - INFO - src.dasproject.utils - Using device: cuda
+Device: cuda
+Found 96 training files.
+File-level split: 76 train / 20 val
+2026-02-21 21:01:05,367 - INFO - src.dasproject.data - Initializing DASDataset with 76 files in train mode.
+2026-02-21 21:01:05,382 - INFO - src.dasproject.data - Saved metadata to data/raw/train/das_metadata.json
+2026-02-21 21:04:00,519 - INFO - src.dasproject.data - Loaded 3800 patches.
+2026-02-21 21:04:00,724 - INFO - src.dasproject.data - Initializing DASDataset with 20 files in train mode.
+2026-02-21 21:04:00,738 - INFO - src.dasproject.data - Saved metadata to data/raw/train/das_metadata.json
+2026-02-21 21:04:46,960 - INFO - src.dasproject.data - Loaded 1000 patches.
+
+--- Trial 0: LR=0.000479, Latent=192 ---
+  Epoch 1/40: Train=13.488408  Val=13.445881
+  Epoch 2/40: Train=13.435061  Val=13.381032
+  Epoch 3/40: Train=13.369894  Val=13.326331
+  Epoch 4/40: Train=13.292524  Val=13.247521
+  Epoch 5/40: Train=13.207399  Val=13.147419
+  Epoch 6/40: Train=13.115346  Val=13.085305
+  Epoch 7/40: Train=13.051810  Val=13.023804
+  Epoch 8/40: Train=13.025093  Val=12.986824
+  Epoch 9/40: Train=12.958567  Val=12.946389
+  Epoch 10/40: Train=12.942094  Val=12.946252
+  Epoch 11/40: Train=12.929085  Val=12.947134
+  Epoch 12/40: Train=12.907906  Val=12.960534
+  Epoch 13/40: Train=12.894486  Val=12.895563
+  Epoch 14/40: Train=12.884156  Val=12.924138
+  Epoch 15/40: Train=12.877301  Val=12.880756
+  Epoch 16/40: Train=12.875035  Val=12.880944
+  Epoch 17/40: Train=12.858870  Val=12.866772
+  Epoch 18/40: Train=12.863764  Val=12.905095
+  Epoch 19/40: Train=12.838441  Val=12.864892
+  Epoch 20/40: Train=12.841423  Val=12.853674
+  Epoch 21/40: Train=12.822045  Val=12.861219
+  Epoch 22/40: Train=12.830679  Val=12.871321
+  Epoch 23/40: Train=12.803886  Val=12.840934
+  Epoch 24/40: Train=12.804142  Val=12.851361
+  Epoch 25/40: Train=12.803544  Val=12.836185
+  Epoch 26/40: Train=12.791452  Val=12.832459
+  Epoch 27/40: Train=12.801766  Val=12.828952
+  Epoch 28/40: Train=12.780422  Val=12.831364
+  Epoch 29/40: Train=12.781204  Val=12.836440
+  Epoch 30/40: Train=12.769684  Val=12.825820
+  Epoch 31/40: Train=12.760555  Val=12.820535
+  Epoch 32/40: Train=12.765642  Val=12.833027
+  Epoch 33/40: Train=12.772718  Val=12.824148
+  Epoch 34/40: Train=12.771538  Val=12.829692
+  Epoch 35/40: Train=12.752349  Val=12.819660
+  Epoch 36/40: Train=12.753308  Val=12.822413
+  Epoch 37/40: Train=12.752141  Val=12.822397
+  Epoch 38/40: Train=12.771240  Val=12.816566
+  Epoch 39/40: Train=12.735835  Val=12.850157
+  Epoch 40/40: Train=12.743136  Val=12.816076
+--> New best (Val Loss: 12.816076)
+
+--- Trial 1: LR=0.000259, Latent=64 ---
+  Epoch 1/40: Train=13.497809  Val=13.457179
+  Epoch 2/40: Train=13.436270  Val=13.429307
+  Epoch 3/40: Train=13.397337  Val=13.381548
+  Epoch 4/40: Train=13.379526  Val=13.396305
+  Epoch 5/40: Train=13.351482  Val=13.330778
+  Epoch 6/40: Train=13.315492  Val=13.301315
+  Epoch 7/40: Train=13.250568  Val=13.223094
+  Epoch 8/40: Train=13.173165  Val=13.153563
+  Epoch 9/40: Train=13.113783  Val=13.091944
+  Epoch 10/40: Train=13.066809  Val=13.060182
+  Epoch 11/40: Train=13.029895  Val=13.021215
+  Epoch 12/40: Train=13.001010  Val=12.993918
+  Epoch 13/40: Train=12.974190  Val=12.970966
+  Epoch 14/40: Train=12.957790  Val=12.959218
+  Epoch 15/40: Train=12.939488  Val=12.941266
+  Epoch 16/40: Train=12.927841  Val=12.948584
+  Epoch 17/40: Train=12.915910  Val=12.936027
+  Epoch 18/40: Train=12.907039  Val=12.914822
+  Epoch 19/40: Train=12.900416  Val=12.970976
+  Epoch 20/40: Train=12.893835  Val=12.906181
+  Epoch 21/40: Train=12.911681  Val=12.902811
+  Epoch 22/40: Train=12.878921  Val=12.898834
+  Epoch 23/40: Train=12.872522  Val=12.890707
+  Epoch 24/40: Train=12.871797  Val=12.956298
+  Epoch 25/40: Train=12.863821  Val=12.891911
+  Epoch 26/40: Train=12.875109  Val=12.886841
+  Epoch 27/40: Train=12.852820  Val=12.887200
+  Epoch 28/40: Train=12.854917  Val=12.878308
+  Epoch 29/40: Train=12.846471  Val=12.883717
+  Epoch 30/40: Train=12.846091  Val=12.938501
+  Epoch 31/40: Train=12.855797  Val=12.873955
+  Epoch 32/40: Train=12.842837  Val=12.875809
+  Epoch 33/40: Train=12.850678  Val=12.872040
+  Epoch 34/40: Train=12.831834  Val=12.879070
+  Epoch 35/40: Train=12.826874  Val=12.869771
+  Epoch 36/40: Train=12.824773  Val=12.866025
+  Epoch 37/40: Train=12.844665  Val=12.873807
+  Epoch 38/40: Train=12.841193  Val=12.871544
+  Epoch 39/40: Train=12.832573  Val=12.865719
+  Epoch 40/40: Train=12.818044  Val=12.877473
+
+--- Trial 2: LR=0.000337, Latent=256 ---
+  Epoch 1/40: Train=13.512728  Val=13.482433
+  Epoch 2/40: Train=13.451967  Val=13.441985
+  Epoch 3/40: Train=13.396960  Val=13.349939
+  Epoch 4/40: Train=13.305047  Val=13.260129
+  Epoch 5/40: Train=13.229154  Val=13.177865
+  Epoch 6/40: Train=13.126171  Val=13.090213
+  Epoch 7/40: Train=13.055266  Val=13.046845
+  Epoch 8/40: Train=13.008717  Val=13.004401
+  Epoch 9/40: Train=12.974918  Val=13.067579
+  Epoch 10/40: Train=12.955655  Val=12.952840
+  Epoch 11/40: Train=12.927527  Val=12.940919
+  Epoch 12/40: Train=12.903227  Val=12.921295
+  Epoch 13/40: Train=12.916977  Val=12.912155
+  Epoch 14/40: Train=12.872195  Val=12.897707
+  Epoch 15/40: Train=12.888249  Val=12.915469
+  Epoch 16/40: Train=12.859108  Val=12.885138
+  Epoch 17/40: Train=12.844675  Val=12.874993
+  Epoch 18/40: Train=12.829921  Val=12.861588
+  Epoch 19/40: Train=12.844204  Val=12.870358
+  Epoch 20/40: Train=12.812234  Val=12.853090
+  Epoch 21/40: Train=12.791395  Val=12.842316
+  Epoch 22/40: Train=12.808820  Val=12.840137
+  Epoch 23/40: Train=12.773168  Val=12.830177
+  Epoch 24/40: Train=12.786826  Val=12.826118
+  Epoch 25/40: Train=12.776754  Val=12.833185
+  Epoch 26/40: Train=12.770125  Val=12.825280
+  Epoch 27/40: Train=12.752168  Val=12.834356
+  Epoch 28/40: Train=12.770087  Val=12.814180
+  Epoch 29/40: Train=12.729977  Val=12.809833
+  Epoch 30/40: Train=12.720588  Val=12.803756
+  Epoch 31/40: Train=12.741414  Val=12.803393
+  Epoch 32/40: Train=12.722540  Val=12.806528
+  Epoch 33/40: Train=12.716490  Val=12.802753
+  Epoch 34/40: Train=12.706307  Val=12.824242
+  Epoch 35/40: Train=12.692894  Val=12.796998
+  Epoch 36/40: Train=12.679861  Val=12.796674
+  Epoch 37/40: Train=12.689477  Val=12.814374
+  Epoch 38/40: Train=12.690545  Val=12.805353
+  Epoch 39/40: Train=12.666648  Val=12.805905
+  Epoch 40/40: Train=12.676505  Val=12.795165
+--> New best (Val Loss: 12.795165)
+
+--- Trial 3: LR=0.000492, Latent=192 ---
+  Epoch 1/40: Train=13.511639  Val=13.459630
+  Epoch 2/40: Train=13.426426  Val=13.398630
+  Epoch 3/40: Train=13.386610  Val=13.354855
+  Epoch 4/40: Train=13.328664  Val=13.291546
+
+--- Trial 4: LR=0.000969, Latent=160 ---
+  Epoch 1/40: Train=13.488305  Val=13.467142
+  Epoch 2/40: Train=13.414712  Val=13.379956
+  Epoch 3/40: Train=13.291030  Val=13.239956
+  Epoch 4/40: Train=13.166319  Val=13.077666
+  Epoch 5/40: Train=13.029954  Val=12.989910
+  Epoch 6/40: Train=13.053167  Val=12.967172
+  Epoch 7/40: Train=12.960622  Val=12.932010
+  Epoch 8/40: Train=12.937968  Val=12.923821
+  Epoch 9/40: Train=12.946439  Val=13.043891
+  Epoch 10/40: Train=12.923853  Val=12.924048
+  Epoch 11/40: Train=12.960987  Val=12.893604
+  Epoch 12/40: Train=12.931874  Val=12.936188
+  Epoch 13/40: Train=12.879813  Val=12.879320
+  Epoch 14/40: Train=12.867338  Val=12.881829
+  Epoch 15/40: Train=12.863436  Val=12.875732
+  Epoch 16/40: Train=12.902908  Val=12.870895
+  Epoch 17/40: Train=12.844808  Val=12.877651
+  Epoch 18/40: Train=12.852013  Val=12.873490
+  Epoch 19/40: Train=12.841949  Val=12.886300
+
+--- Trial 5: LR=0.000456, Latent=128 ---
+  Epoch 1/40: Train=13.500095  Val=13.443390
+  Epoch 2/40: Train=13.425946  Val=13.396440
+  Epoch 3/40: Train=13.357686  Val=13.322888
+  Epoch 4/40: Train=13.291073  Val=13.249596
+  Epoch 5/40: Train=13.215802  Val=13.153616
+  Epoch 6/40: Train=13.117049  Val=13.075864
+  Epoch 7/40: Train=13.045180  Val=13.025784
+  Epoch 8/40: Train=13.000974  Val=12.999886
+  Epoch 9/40: Train=12.963709  Val=12.953277
+  Epoch 10/40: Train=12.952480  Val=12.933752
+  Epoch 11/40: Train=12.925411  Val=12.940776
+  Epoch 12/40: Train=12.913116  Val=12.917493
+  Epoch 13/40: Train=12.896653  Val=12.911957
+  Epoch 14/40: Train=12.918163  Val=12.906201
+  Epoch 15/40: Train=12.890322  Val=12.931151
+  Epoch 16/40: Train=12.871476  Val=12.891509
+
+--- Trial 6: LR=0.000060, Latent=96 ---
+  Epoch 1/40: Train=13.537177  Val=13.519186
+  Epoch 2/40: Train=13.490833  Val=13.481517
+  Epoch 3/40: Train=13.463353  Val=13.465557
+  Epoch 4/40: Train=13.448442  Val=13.454854
+
+--- Trial 7: LR=0.000249, Latent=32 ---
+  Epoch 1/40: Train=13.507518  Val=13.463636
+  Epoch 2/40: Train=13.449440  Val=13.426823
+  Epoch 3/40: Train=13.413016  Val=13.399461
+  Epoch 4/40: Train=13.393876  Val=13.421481
+
+--- Trial 8: LR=0.000325, Latent=32 ---
+  Epoch 1/40: Train=13.504447  Val=13.458234
+  Epoch 2/40: Train=13.438069  Val=13.408133
+  Epoch 3/40: Train=13.407180  Val=13.415486
+  Epoch 4/40: Train=13.406091  Val=13.449430
+
+--- Trial 9: LR=0.001124, Latent=160 ---
+  Epoch 1/40: Train=13.509705  Val=13.547666
+  Epoch 2/40: Train=13.487624  Val=13.430557
+  Epoch 3/40: Train=13.397724  Val=13.352830
+  Epoch 4/40: Train=13.325973  Val=13.263650
+
+--- Trial 10: LR=0.004891, Latent=256 ---
+  Epoch 1/40: Train=13.527449  Val=13.468067
+  Epoch 2/40: Train=13.477733  Val=13.538238
+  Epoch 3/40: Train=13.398324  Val=13.235479
+  Epoch 4/40: Train=13.201161  Val=13.110277
+  Epoch 5/40: Train=13.089736  Val=13.071671
+  Epoch 6/40: Train=13.037045  Val=13.076183
+  Epoch 7/40: Train=13.020064  Val=13.024532
+  Epoch 8/40: Train=12.994541  Val=13.005716
+
+--- Trial 11: LR=0.000108, Latent=256 ---
+  Epoch 1/40: Train=13.538877  Val=13.527770
+  Epoch 2/40: Train=13.489503  Val=13.470218
+  Epoch 3/40: Train=13.446313  Val=13.437680
+  Epoch 4/40: Train=13.414221  Val=13.406831
+
+--- Trial 12: LR=0.001332, Latent=224 ---

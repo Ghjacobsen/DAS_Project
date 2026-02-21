@@ -1,0 +1,52 @@
+# config.yaml
+
+paths:
+  raw_data_path: "data/raw/train"
+  inference_data_path: "data/raw/test"
+  reconstruction_path: "data/reconstructions"
+  model_path: "models"
+  figure_path: "reports/figures"
+  loss_history_path: "models/loss_history.json"
+
+preprocessing:
+  remove_channel_baseline: true  # Subtract per-channel median (improves transfer learning)
+  normalization: "log1p"        # "log1p" (symmetric log) or "zscore"
+  log1p_scale: 10.4             # Division constant after log1p (≈ log1p(32768))
+
+data:
+  patch_size: [128, 128]        # (Time, Channels)
+  train_val_split: 0.8
+  patches_per_file: 50          # Random patches sampled per file during training
+  spatial_sampling_dx: 1.02     # meters
+
+hyperparameter_search:
+  method: "optuna"              # "optuna" or "grid"
+  n_trials: 50                  # Number of Optuna trials
+  # Search ranges for Optuna
+  latent_dim_min: 32
+  latent_dim_max: 256
+  lr_min: 0.00005
+  lr_max: 0.005
+  # Grid search fallback (only used if method == "grid")
+  latent_dims: [64, 128]
+  learning_rates: [0.001, 0.0001]
+
+training:
+  epochs: 40
+  batch_size: 32
+  inference_batch_size: 32
+  patience: 5                   # Early stopping patience
+  seed: 42
+  loss_function: "l1"           # "l1", "huber", or "mse"
+  huber_delta: 1.0              # Delta for Huber loss (only used if loss_function == "huber")
+
+model:
+  latent_dim: 128
+  input_channels: 1
+
+visualization:
+  threshold_sigma: 3.0
+
+logging:
+  level: "INFO"
+  file: "logs/dasproject.log"

@@ -1,0 +1,13 @@
+[I 2026-02-21 21:04:47,015] A new study created in memory with name: no-name-807ecbb1-0b23-4522-93a7-bc885bf3849f
+[I 2026-02-21 21:05:12,984] Trial 0 finished with value: 12.816075921058655 and parameters: {'lr': 0.00047861868854565673, 'latent_dim': 192}. Best is trial 0 with value: 12.816075921058655.
+[I 2026-02-21 21:05:33,492] Trial 1 finished with value: 12.865718811750412 and parameters: {'lr': 0.0002589749546595982, 'latent_dim': 64}. Best is trial 0 with value: 12.816075921058655.
+[I 2026-02-21 21:05:57,039] Trial 2 finished with value: 12.795164704322815 and parameters: {'lr': 0.00033681055732230186, 'latent_dim': 256}. Best is trial 2 with value: 12.795164704322815.
+[I 2026-02-21 21:05:59,339] Trial 3 pruned. 
+[I 2026-02-21 21:06:09,840] Trial 4 pruned. 
+[I 2026-02-21 21:06:18,464] Trial 5 pruned. 
+[I 2026-02-21 21:06:20,596] Trial 6 pruned. 
+[I 2026-02-21 21:06:22,620] Trial 7 pruned. 
+[I 2026-02-21 21:06:24,660] Trial 8 pruned. 
+[I 2026-02-21 21:06:26,896] Trial 9 pruned. 
+[I 2026-02-21 21:06:31,656] Trial 10 pruned. 
+[I 2026-02-21 21:06:34,067] Trial 11 pruned. 
