@@ -251,3 +251,410 @@ File-level split: 76 train / 20 val
   Epoch 4/40: Train=13.414221  Val=13.406831
 
 --- Trial 12: LR=0.001332, Latent=224 ---
+  Epoch 1/40: Train=13.520458  Val=13.469786
+  Epoch 2/40: Train=13.410849  Val=13.315020
+  Epoch 3/40: Train=13.260889  Val=13.283313
+  Epoch 4/40: Train=13.129044  Val=13.044888
+  Epoch 5/40: Train=13.025155  Val=13.034324
+  Epoch 6/40: Train=12.974696  Val=12.929730
+  Epoch 7/40: Train=12.964768  Val=12.933937
+  Epoch 8/40: Train=12.960570  Val=13.139530
+  Epoch 9/40: Train=12.948303  Val=12.902182
+  Epoch 10/40: Train=12.895776  Val=12.892387
+  Epoch 11/40: Train=12.894854  Val=12.896906
+  Epoch 12/40: Train=12.873178  Val=12.906184
+  Epoch 13/40: Train=12.872194  Val=12.864890
+  Epoch 14/40: Train=12.844382  Val=12.882579
+  Epoch 15/40: Train=12.832663  Val=12.841984
+  Epoch 16/40: Train=12.860941  Val=12.852360
+  Epoch 17/40: Train=12.836803  Val=12.850693
+  Epoch 18/40: Train=12.806418  Val=12.826387
+  Epoch 19/40: Train=12.837101  Val=12.850070
+  Epoch 20/40: Train=12.783572  Val=12.866809
+  Epoch 21/40: Train=12.817158  Val=12.862191
+  Epoch 22/40: Train=12.806100  Val=12.850665
+  Epoch 23/40: Train=12.769226  Val=12.840779
+2026-02-21 21:06:47,317 - INFO - src.dasproject.train -   Early stopping at epoch 23
+
+--- Trial 13: LR=0.000138, Latent=224 ---
+  Epoch 1/40: Train=13.541251  Val=13.547554
+  Epoch 2/40: Train=13.506724  Val=13.480424
+  Epoch 3/40: Train=13.459439  Val=13.459667
+  Epoch 4/40: Train=13.440903  Val=13.442061
+
+--- Trial 14: LR=0.002180, Latent=192 ---
+  Epoch 1/40: Train=13.514945  Val=13.429184
+  Epoch 2/40: Train=13.504855  Val=13.538151
+  Epoch 3/40: Train=13.501335  Val=13.474434
+  Epoch 4/40: Train=13.432014  Val=13.374708
+
+--- Trial 15: LR=0.000178, Latent=224 ---
+  Epoch 1/40: Train=13.516352  Val=13.486723
+  Epoch 2/40: Train=13.459058  Val=13.447437
+  Epoch 3/40: Train=13.422047  Val=13.397171
+  Epoch 4/40: Train=13.357539  Val=13.336441
+
+--- Trial 16: LR=0.000817, Latent=192 ---
+  Epoch 1/40: Train=13.526521  Val=13.520461
+  Epoch 2/40: Train=13.472375  Val=13.488070
+  Epoch 3/40: Train=13.418998  Val=13.397724
+  Epoch 4/40: Train=13.394295  Val=13.387748
+
+--- Trial 17: LR=0.000075, Latent=256 ---
+  Epoch 1/40: Train=13.534342  Val=13.509584
+  Epoch 2/40: Train=13.475578  Val=13.468638
+  Epoch 3/40: Train=13.451638  Val=13.454867
+  Epoch 4/40: Train=13.437270  Val=13.440717
+
+--- Trial 18: LR=0.000646, Latent=128 ---
+  Epoch 1/40: Train=13.489250  Val=13.452409
+  Epoch 2/40: Train=13.426117  Val=13.414809
+  Epoch 3/40: Train=13.335538  Val=13.289169
+  Epoch 4/40: Train=13.220248  Val=13.140769
+  Epoch 5/40: Train=13.070191  Val=13.009136
+  Epoch 6/40: Train=12.993025  Val=12.962274
+  Epoch 7/40: Train=13.023398  Val=12.945924
+  Epoch 8/40: Train=12.929750  Val=13.001849
+  Epoch 9/40: Train=12.925023  Val=12.909802
+  Epoch 10/40: Train=12.919622  Val=12.910802
+  Epoch 11/40: Train=12.890063  Val=12.885689
+  Epoch 12/40: Train=12.878007  Val=12.879327
+  Epoch 13/40: Train=12.868842  Val=12.868577
+  Epoch 14/40: Train=12.861219  Val=12.913236
+  Epoch 15/40: Train=12.863341  Val=12.861463
+  Epoch 16/40: Train=12.842657  Val=12.866833
+  Epoch 17/40: Train=12.862242  Val=12.850883
+  Epoch 18/40: Train=12.832999  Val=13.034797
+  Epoch 19/40: Train=12.828460  Val=12.843253
+  Epoch 20/40: Train=12.819632  Val=12.838572
+  Epoch 21/40: Train=12.805065  Val=12.839572
+  Epoch 22/40: Train=12.796764  Val=12.835295
+  Epoch 23/40: Train=12.818822  Val=12.840702
+  Epoch 24/40: Train=12.792691  Val=12.880883
+  Epoch 25/40: Train=12.783726  Val=12.841450
+  Epoch 26/40: Train=12.785693  Val=12.823796
+  Epoch 27/40: Train=12.771819  Val=12.836486
+  Epoch 28/40: Train=12.807783  Val=12.833108
+  Epoch 29/40: Train=12.763266  Val=12.816325
+  Epoch 30/40: Train=12.758652  Val=12.818669
+  Epoch 31/40: Train=12.760496  Val=12.887961
+  Epoch 32/40: Train=12.769065  Val=12.820340
+  Epoch 33/40: Train=12.759686  Val=12.820839
+  Epoch 34/40: Train=12.735055  Val=12.821040
+2026-02-21 21:07:17,381 - INFO - src.dasproject.train -   Early stopping at epoch 34
+
+--- Trial 19: LR=0.001943, Latent=224 ---
+  Epoch 1/40: Train=13.529914  Val=13.544635
+  Epoch 2/40: Train=13.537319  Val=13.541864
+  Epoch 3/40: Train=13.531943  Val=13.526498
+  Epoch 4/40: Train=13.489744  Val=13.462918
+
+--- Trial 20: LR=0.000368, Latent=192 ---
+  Epoch 1/40: Train=13.506247  Val=13.477124
+  Epoch 2/40: Train=13.430709  Val=13.399024
+  Epoch 3/40: Train=13.355524  Val=13.310377
+  Epoch 4/40: Train=13.281860  Val=13.238226
+  Epoch 5/40: Train=13.203107  Val=13.142829
+  Epoch 6/40: Train=13.110162  Val=13.077794
+  Epoch 7/40: Train=13.060355  Val=13.058880
+
+--- Trial 21: LR=0.000687, Latent=128 ---
+  Epoch 1/40: Train=13.491579  Val=13.422853
+  Epoch 2/40: Train=13.462845  Val=13.402364
+  Epoch 3/40: Train=13.407666  Val=13.390925
+  Epoch 4/40: Train=13.345496  Val=13.308345
+
+--- Trial 22: LR=0.000643, Latent=96 ---
+  Epoch 1/40: Train=13.498321  Val=13.428198
+  Epoch 2/40: Train=13.408602  Val=13.388169
+  Epoch 3/40: Train=13.379476  Val=13.361515
+  Epoch 4/40: Train=13.312309  Val=13.311254
+
+--- Trial 23: LR=0.000195, Latent=160 ---
+  Epoch 1/40: Train=13.539339  Val=13.538335
+  Epoch 2/40: Train=13.494783  Val=13.469441
+  Epoch 3/40: Train=13.428625  Val=13.405767
+  Epoch 4/40: Train=13.393637  Val=13.384513
+
+--- Trial 24: LR=0.000509, Latent=96 ---
+  Epoch 1/40: Train=13.480328  Val=13.415502
+  Epoch 2/40: Train=13.426482  Val=13.386867
+  Epoch 3/40: Train=13.374479  Val=13.347003
+  Epoch 4/40: Train=13.304418  Val=13.253117
+
+--- Trial 25: LR=0.001637, Latent=128 ---
+  Epoch 1/40: Train=13.509520  Val=13.435979
+  Epoch 2/40: Train=13.527173  Val=13.547287
+  Epoch 3/40: Train=13.540531  Val=13.545757
+  Epoch 4/40: Train=13.511193  Val=13.457103
+
+--- Trial 26: LR=0.002685, Latent=160 ---
+  Epoch 1/40: Train=13.534557  Val=13.545354
+  Epoch 2/40: Train=13.431449  Val=13.285811
+  Epoch 3/40: Train=13.234721  Val=13.151444
+  Epoch 4/40: Train=13.135715  Val=13.099089
+  Epoch 5/40: Train=13.036351  Val=12.998501
+  Epoch 6/40: Train=13.004198  Val=12.982959
+  Epoch 7/40: Train=12.988029  Val=13.001398
+  Epoch 8/40: Train=13.013160  Val=12.957506
+  Epoch 9/40: Train=12.951220  Val=12.929847
+  Epoch 10/40: Train=12.943974  Val=12.921696
+  Epoch 11/40: Train=12.920690  Val=12.926819
+  Epoch 12/40: Train=12.914292  Val=12.914586
+  Epoch 13/40: Train=12.907197  Val=12.897808
+
+--- Trial 27: LR=0.000328, Latent=256 ---
+  Epoch 1/40: Train=13.531129  Val=13.489100
+  Epoch 2/40: Train=13.444362  Val=13.403729
+  Epoch 3/40: Train=13.400918  Val=13.388092
+  Epoch 4/40: Train=13.371385  Val=13.357048
+
+--- Trial 28: LR=0.000629, Latent=64 ---
+  Epoch 1/40: Train=13.496719  Val=13.457460
+  Epoch 2/40: Train=13.425851  Val=13.390252
+  Epoch 3/40: Train=13.364437  Val=13.339965
+  Epoch 4/40: Train=13.298017  Val=13.270943
+
+--- Trial 29: LR=0.000246, Latent=64 ---
+  Epoch 1/40: Train=13.513286  Val=13.474549
+  Epoch 2/40: Train=13.453457  Val=13.426689
+  Epoch 3/40: Train=13.409171  Val=13.392391
+  Epoch 4/40: Train=13.387897  Val=13.377073
+
+--- Trial 30: LR=0.000390, Latent=224 ---
+  Epoch 1/40: Train=13.501340  Val=13.483369
+  Epoch 2/40: Train=13.440680  Val=13.410854
+  Epoch 3/40: Train=13.347960  Val=13.285294
+  Epoch 4/40: Train=13.252025  Val=13.212963
+  Epoch 5/40: Train=13.171536  Val=13.133482
+  Epoch 6/40: Train=13.100278  Val=13.081565
+  Epoch 7/40: Train=13.061788  Val=13.055864
+
+--- Trial 31: LR=0.001232, Latent=224 ---
+  Epoch 1/40: Train=13.507152  Val=13.542839
+  Epoch 2/40: Train=13.490957  Val=13.455462
+  Epoch 3/40: Train=13.449360  Val=13.458433
+  Epoch 4/40: Train=13.405894  Val=13.379078
+
+--- Trial 32: LR=0.001347, Latent=192 ---
+  Epoch 1/40: Train=13.501823  Val=13.438643
+  Epoch 2/40: Train=13.396620  Val=13.355180
+  Epoch 3/40: Train=13.264201  Val=13.187735
+  Epoch 4/40: Train=13.115405  Val=13.151962
+  Epoch 5/40: Train=13.050882  Val=13.039771
+  Epoch 6/40: Train=13.006864  Val=12.984896
+  Epoch 7/40: Train=12.975160  Val=12.938859
+  Epoch 8/40: Train=12.953715  Val=12.963957
+  Epoch 9/40: Train=12.928631  Val=12.920605
+  Epoch 10/40: Train=12.962093  Val=12.920079
+  Epoch 11/40: Train=12.895139  Val=12.897216
+  Epoch 12/40: Train=12.898556  Val=12.938536
+  Epoch 13/40: Train=12.935154  Val=12.879679
+  Epoch 14/40: Train=12.892753  Val=13.147273
+  Epoch 15/40: Train=12.891961  Val=12.872425
+  Epoch 16/40: Train=12.902151  Val=12.880351
+  Epoch 17/40: Train=12.848498  Val=12.919972
+
+--- Trial 33: LR=0.000899, Latent=224 ---
+  Epoch 1/40: Train=13.494633  Val=13.476250
+  Epoch 2/40: Train=13.377469  Val=13.261860
+  Epoch 3/40: Train=13.213347  Val=13.145749
+  Epoch 4/40: Train=13.073802  Val=13.008027
+  Epoch 5/40: Train=12.999207  Val=12.974413
+  Epoch 6/40: Train=12.947960  Val=12.937809
+  Epoch 7/40: Train=12.971618  Val=12.909902
+  Epoch 8/40: Train=12.950489  Val=12.936676
+  Epoch 9/40: Train=12.905730  Val=12.887363
+  Epoch 10/40: Train=13.018460  Val=12.923273
+  Epoch 11/40: Train=12.940751  Val=12.889967
+  Epoch 12/40: Train=12.874392  Val=13.214204
+  Epoch 13/40: Train=12.935010  Val=12.868521
+  Epoch 14/40: Train=12.923577  Val=12.918613
+  Epoch 15/40: Train=12.835143  Val=12.854140
+  Epoch 16/40: Train=12.835777  Val=12.858340
+  Epoch 17/40: Train=12.813507  Val=12.836000
+  Epoch 18/40: Train=12.824757  Val=12.830144
+  Epoch 19/40: Train=12.814387  Val=12.839751
+  Epoch 20/40: Train=12.824694  Val=12.830644
+  Epoch 21/40: Train=12.782711  Val=12.817545
+  Epoch 22/40: Train=12.767985  Val=12.879282
+  Epoch 23/40: Train=12.768772  Val=12.833000
+  Epoch 24/40: Train=12.759789  Val=12.803233
+  Epoch 25/40: Train=12.743793  Val=12.796418
+  Epoch 26/40: Train=12.751215  Val=12.811610
+  Epoch 27/40: Train=12.725629  Val=12.788378
+  Epoch 28/40: Train=12.731066  Val=12.795037
+  Epoch 29/40: Train=12.743613  Val=12.963447
+  Epoch 30/40: Train=12.703992  Val=12.809278
+  Epoch 31/40: Train=12.693268  Val=12.799176
+  Epoch 32/40: Train=12.674321  Val=12.780633
+  Epoch 33/40: Train=12.724036  Val=12.780279
+  Epoch 34/40: Train=12.662142  Val=12.771506
+  Epoch 35/40: Train=12.667575  Val=12.776377
+  Epoch 36/40: Train=12.661664  Val=12.780608
+  Epoch 37/40: Train=12.631435  Val=12.763123
+  Epoch 38/40: Train=12.619031  Val=12.779651
+  Epoch 39/40: Train=12.634369  Val=12.761716
+  Epoch 40/40: Train=12.623947  Val=12.758371
+--> New best (Val Loss: 12.758371)
+
+--- Trial 34: LR=0.000929, Latent=256 ---
+  Epoch 1/40: Train=13.495221  Val=13.441105
+  Epoch 2/40: Train=13.460419  Val=13.428734
+  Epoch 3/40: Train=13.347265  Val=13.272575
+  Epoch 4/40: Train=13.228872  Val=13.166709
+  Epoch 5/40: Train=13.107534  Val=13.068326
+  Epoch 6/40: Train=13.033162  Val=13.006312
+  Epoch 7/40: Train=12.986454  Val=12.974914
+  Epoch 8/40: Train=12.972554  Val=13.036873
+  Epoch 9/40: Train=12.950186  Val=12.919806
+  Epoch 10/40: Train=12.910459  Val=12.918739
+  Epoch 11/40: Train=12.918624  Val=12.919890
+  Epoch 12/40: Train=12.902854  Val=12.925166
+  Epoch 13/40: Train=12.901698  Val=12.901988
+
+--- Trial 35: LR=0.000557, Latent=160 ---
+  Epoch 1/40: Train=13.493931  Val=13.500649
+  Epoch 2/40: Train=13.406474  Val=13.358456
+  Epoch 3/40: Train=13.282171  Val=13.220670
+  Epoch 4/40: Train=13.127317  Val=13.074051
+  Epoch 5/40: Train=13.024938  Val=12.995274
+  Epoch 6/40: Train=12.987057  Val=13.000987
+  Epoch 7/40: Train=12.954998  Val=12.953039
+  Epoch 8/40: Train=12.941890  Val=12.918386
+  Epoch 9/40: Train=12.901891  Val=12.993534
+  Epoch 10/40: Train=12.887368  Val=12.897772
+  Epoch 11/40: Train=12.871081  Val=12.876973
+  Epoch 12/40: Train=12.885040  Val=12.869832
+  Epoch 13/40: Train=12.856057  Val=12.901312
+  Epoch 14/40: Train=12.851649  Val=12.878427
+  Epoch 15/40: Train=12.829899  Val=12.864124
+  Epoch 16/40: Train=12.815188  Val=12.844863
+  Epoch 17/40: Train=12.822431  Val=12.883787
+  Epoch 18/40: Train=12.806764  Val=12.840901
+  Epoch 19/40: Train=12.792589  Val=12.823329
+  Epoch 20/40: Train=12.796725  Val=12.860365
+  Epoch 21/40: Train=12.772733  Val=12.815225
+  Epoch 22/40: Train=12.779358  Val=12.848780
+  Epoch 23/40: Train=12.772550  Val=12.805232
+  Epoch 24/40: Train=12.748360  Val=12.797508
+  Epoch 25/40: Train=12.737597  Val=12.802210
+  Epoch 26/40: Train=12.789471  Val=12.816562
+  Epoch 27/40: Train=12.723920  Val=12.789866
+  Epoch 28/40: Train=12.720559  Val=12.799083
+  Epoch 29/40: Train=12.746170  Val=12.832369
+  Epoch 30/40: Train=12.722603  Val=12.801570
+  Epoch 31/40: Train=12.715101  Val=12.799617
+  Epoch 32/40: Train=12.699593  Val=12.810850
+2026-02-21 21:08:52,747 - INFO - src.dasproject.train -   Early stopping at epoch 32
+
+--- Trial 36: LR=0.000414, Latent=160 ---
+  Epoch 1/40: Train=13.486185  Val=13.454542
+  Epoch 2/40: Train=13.424001  Val=13.369658
+  Epoch 3/40: Train=13.330444  Val=13.303378
+  Epoch 4/40: Train=13.209244  Val=13.134833
+  Epoch 5/40: Train=13.093641  Val=13.059039
+
+--- Trial 37: LR=0.000506, Latent=192 ---
+  Epoch 1/40: Train=13.502160  Val=13.453265
+  Epoch 2/40: Train=13.443172  Val=13.463241
+  Epoch 3/40: Train=13.362894  Val=13.299228
+  Epoch 4/40: Train=13.260411  Val=13.186237
+
+--- Trial 38: LR=0.000270, Latent=224 ---
+  Epoch 1/40: Train=13.506135  Val=13.461150
+  Epoch 2/40: Train=13.423095  Val=13.388018
+  Epoch 3/40: Train=13.344163  Val=13.294982
+  Epoch 4/40: Train=13.261744  Val=13.228162
+
+--- Trial 39: LR=0.000941, Latent=160 ---
+  Epoch 1/40: Train=13.474571  Val=13.411952
+  Epoch 2/40: Train=13.387207  Val=13.380568
+  Epoch 3/40: Train=13.273967  Val=13.202603
+  Epoch 4/40: Train=13.131652  Val=13.109464
+  Epoch 5/40: Train=13.038958  Val=12.989479
+  Epoch 6/40: Train=12.973195  Val=12.949965
+  Epoch 7/40: Train=12.956712  Val=12.927997
+  Epoch 8/40: Train=12.948889  Val=12.929686
+  Epoch 9/40: Train=12.907535  Val=13.012541
+  Epoch 10/40: Train=12.890531  Val=12.881178
+  Epoch 11/40: Train=12.912290  Val=12.892460
+  Epoch 12/40: Train=12.919778  Val=12.891349
+  Epoch 13/40: Train=12.885884  Val=12.890644
+  Epoch 14/40: Train=12.850282  Val=13.011013
+  Epoch 15/40: Train=12.862761  Val=12.895512
+2026-02-21 21:09:08,365 - INFO - src.dasproject.train -   Early stopping at epoch 15
+
+--- Trial 40: LR=0.000512, Latent=256 ---
+  Epoch 1/40: Train=13.484681  Val=13.435348
+  Epoch 2/40: Train=13.418826  Val=13.325384
+  Epoch 3/40: Train=13.260305  Val=13.195140
+  Epoch 4/40: Train=13.124726  Val=13.078551
+  Epoch 5/40: Train=13.013788  Val=12.985724
+  Epoch 6/40: Train=12.960823  Val=12.933056
+  Epoch 7/40: Train=12.942707  Val=12.911585
+  Epoch 8/40: Train=12.912047  Val=12.921732
+  Epoch 9/40: Train=12.888367  Val=12.927043
+  Epoch 10/40: Train=12.891060  Val=12.904514
+  Epoch 11/40: Train=12.886954  Val=12.945286
+
+--- Trial 41: LR=0.000671, Latent=128 ---
+  Epoch 1/40: Train=13.509378  Val=13.501019
+  Epoch 2/40: Train=13.472761  Val=13.418122
+  Epoch 3/40: Train=13.396668  Val=13.396291
+  Epoch 4/40: Train=13.385651  Val=13.392241
+
+--- Trial 42: LR=0.000816, Latent=128 ---
+  Epoch 1/40: Train=13.493508  Val=13.445837
+  Epoch 2/40: Train=13.442133  Val=13.397443
+  Epoch 3/40: Train=13.342266  Val=13.279995
+  Epoch 4/40: Train=13.253372  Val=13.214744
+
+--- Trial 43: LR=0.000555, Latent=160 ---
+  Epoch 1/40: Train=13.492068  Val=13.421612
+  Epoch 2/40: Train=13.409929  Val=13.405350
+  Epoch 3/40: Train=13.370281  Val=13.355237
+  Epoch 4/40: Train=13.277310  Val=13.213449
+
+--- Trial 44: LR=0.000276, Latent=192 ---
+  Epoch 1/40: Train=13.510566  Val=13.462341
+  Epoch 2/40: Train=13.432358  Val=13.405865
+  Epoch 3/40: Train=13.382514  Val=13.392258
+  Epoch 4/40: Train=13.328508  Val=13.282432
+
+--- Trial 45: LR=0.000214, Latent=96 ---
+  Epoch 1/40: Train=13.509920  Val=13.469677
+  Epoch 2/40: Train=13.454452  Val=13.451569
+  Epoch 3/40: Train=13.416850  Val=13.394205
+  Epoch 4/40: Train=13.387357  Val=13.374726
+
+--- Trial 46: LR=0.000428, Latent=224 ---
+  Epoch 1/40: Train=13.491319  Val=13.432755
+  Epoch 2/40: Train=13.415363  Val=13.366888
+  Epoch 3/40: Train=13.321270  Val=13.258188
+  Epoch 4/40: Train=13.190291  Val=13.131167
+
+--- Trial 47: LR=0.000154, Latent=160 ---
+  Epoch 1/40: Train=13.532412  Val=13.497336
+  Epoch 2/40: Train=13.466379  Val=13.458457
+  Epoch 3/40: Train=13.431846  Val=13.416822
+  Epoch 4/40: Train=13.397396  Val=13.399230
+
+--- Trial 48: LR=0.000322, Latent=192 ---
+  Epoch 1/40: Train=13.495241  Val=13.460726
+  Epoch 2/40: Train=13.439226  Val=13.392572
+  Epoch 3/40: Train=13.366908  Val=13.310620
+  Epoch 4/40: Train=13.270995  Val=13.231262
+
+--- Trial 49: LR=0.000740, Latent=256 ---
+  Epoch 1/40: Train=13.491174  Val=13.436482
+  Epoch 2/40: Train=13.417285  Val=13.363656
+  Epoch 3/40: Train=13.291699  Val=13.235078
+  Epoch 4/40: Train=13.165975  Val=13.087576
+  Epoch 5/40: Train=13.059339  Val=13.020055
+  Epoch 6/40: Train=12.988647  Val=12.999433
+2026-02-21 21:09:36,312 - INFO - src.dasproject.train - Optuna finished. Best trial: 33
+2026-02-21 21:09:36,313 - INFO - src.dasproject.train -   Params: {'lr': 0.0008990354024070141, 'latent_dim': 224}
+2026-02-21 21:09:36,313 - INFO - src.dasproject.train -   Val Loss: 12.758371
+=== Pipeline Complete ===
+Metadata for this run is stored in: data/das_metadata.json (auto-generated by the pipeline)

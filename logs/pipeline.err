@@ -11,3 +11,57 @@
 [I 2026-02-21 21:06:26,896] Trial 9 pruned. 
 [I 2026-02-21 21:06:31,656] Trial 10 pruned. 
 [I 2026-02-21 21:06:34,067] Trial 11 pruned. 
+[I 2026-02-21 21:06:47,318] Trial 12 finished with value: 12.826387345790863 and parameters: {'lr': 0.0013315870415714572, 'latent_dim': 224}. Best is trial 2 with value: 12.795164704322815.
+[I 2026-02-21 21:06:49,662] Trial 13 pruned. 
+[I 2026-02-21 21:06:51,948] Trial 14 pruned. 
+[I 2026-02-21 21:06:54,289] Trial 15 pruned. 
+[I 2026-02-21 21:06:56,577] Trial 16 pruned. 
+[I 2026-02-21 21:06:59,002] Trial 17 pruned. 
+[I 2026-02-21 21:07:17,382] Trial 18 finished with value: 12.816324889659882 and parameters: {'lr': 0.0006457291599030632, 'latent_dim': 128}. Best is trial 2 with value: 12.795164704322815.
+[I 2026-02-21 21:07:19,757] Trial 19 pruned. 
+[I 2026-02-21 21:07:23,751] Trial 20 pruned. 
+[I 2026-02-21 21:07:25,925] Trial 21 pruned. 
+[I 2026-02-21 21:07:28,060] Trial 22 pruned. 
+[I 2026-02-21 21:07:30,313] Trial 23 pruned. 
+[I 2026-02-21 21:07:32,462] Trial 24 pruned. 
+[I 2026-02-21 21:07:34,633] Trial 25 pruned. 
+[I 2026-02-21 21:07:41,878] Trial 26 pruned. 
+[I 2026-02-21 21:07:44,304] Trial 27 pruned. 
+[I 2026-02-21 21:07:46,393] Trial 28 pruned. 
+[I 2026-02-21 21:07:48,475] Trial 29 pruned. 
+[I 2026-02-21 21:07:52,563] Trial 30 pruned. 
+[I 2026-02-21 21:07:54,914] Trial 31 pruned. 
+[I 2026-02-21 21:08:04,548] Trial 32 pruned. 
+[I 2026-02-21 21:08:27,510] Trial 33 finished with value: 12.75837129354477 and parameters: {'lr': 0.0008990354024070141, 'latent_dim': 224}. Best is trial 33 with value: 12.75837129354477.
+[I 2026-02-21 21:08:35,157] Trial 34 pruned. 
+[I 2026-02-21 21:08:52,748] Trial 35 finished with value: 12.78986594080925 and parameters: {'lr': 0.0005570764391726889, 'latent_dim': 160}. Best is trial 33 with value: 12.75837129354477.
+[I 2026-02-21 21:08:55,521] Trial 36 pruned. 
+[I 2026-02-21 21:08:57,807] Trial 37 pruned. 
+[I 2026-02-21 21:09:00,143] Trial 38 pruned. 
+[I 2026-02-21 21:09:08,366] Trial 39 finished with value: 12.881177812814713 and parameters: {'lr': 0.0009410163960907593, 'latent_dim': 160}. Best is trial 33 with value: 12.75837129354477.
+[I 2026-02-21 21:09:14,875] Trial 40 pruned. 
+[I 2026-02-21 21:09:17,050] Trial 41 pruned. 
+[I 2026-02-21 21:09:19,221] Trial 42 pruned. 
+[I 2026-02-21 21:09:21,449] Trial 43 pruned. 
+[I 2026-02-21 21:09:23,756] Trial 44 pruned. 
+[I 2026-02-21 21:09:25,877] Trial 45 pruned. 
+[I 2026-02-21 21:09:28,202] Trial 46 pruned. 
+[I 2026-02-21 21:09:30,418] Trial 47 pruned. 
+[I 2026-02-21 21:09:32,693] Trial 48 pruned. 
+[I 2026-02-21 21:09:36,311] Trial 49 pruned. 
+Traceback (most recent call last):
+  File "/zhome/02/6/167678/.local/share/uv/python/cpython-3.11.5-linux-x86_64-gnu/lib/python3.11/pathlib.py", line 1116, in mkdir
+    os.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'models'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/work3/s214374/DASProject/DASProject/tasks.py", line 40, in <module>
+  File "/work3/s214374/DASProject/DASProject/tasks.py", line 20, in run_pipeline
+  File "/work3/s214374/DASProject/DASProject/src/dasproject/train.py", line 222, in run_hyperparameter_search
+  File "/zhome/02/6/167678/.local/share/uv/python/cpython-3.11.5-linux-x86_64-gnu/lib/python3.11/pathlib.py", line 1121, in mkdir
+    self.mkdir(mode, parents=False, exist_ok=exist_ok)
+  File "/zhome/02/6/167678/.local/share/uv/python/cpython-3.11.5-linux-x86_64-gnu/lib/python3.11/pathlib.py", line 1116, in mkdir
+    os.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'models'
