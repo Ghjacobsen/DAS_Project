@@ -1,61 +1,32 @@
-# dasproject
+# DAS_Project
 
-Das Project
+Distributed Acoustic Sensing (DAS) Pipeline for Unsupervised Learning and Transfer Learning
 
+## Overview
+This repository contains a modular pipeline for processing, training, and evaluating models on DAS data, with a focus on unsupervised learning (e.g., convolutional autoencoders) and transfer learning across different cable installations.
 
-Noter til Gustav
+## Features
+- **Preprocessing:** Channel baseline removal, log normalization, patch extraction
+- **Training:** Hyperparameter search, model training (CAE)
+- **Inference:** Residual calculation and reconstruction
+- **Metadata Tracking:** Automatic extraction and storage of key cable and acquisition parameters
+- **Batch Scripts:** Easy-to-use scripts for running the full pipeline on HPC clusters
 
+## Structure
+- `src/` — Core source code
+- `scripts/` — Utility and plotting scripts
+- `models/` — Saved models
+- `reports/` — Figures and results
+- `data/`, `logs/`, `notebooks/`, `batch/`, `config/` — Project scaffolding (contents ignored in git)
 
-- Fíx logikken for det, lige nu er det lidt mystisk. måske skal vi heller ikke hardcappe på 60km, så er der nogen sjove billeder.
+## Usage
+1. Configure your experiment in `config/config.yaml`
+2. Run the pipeline: `python3 tasks.py` or submit the batch script
+3. Find results in `models/`, `reports/`, and metadata in `data/das_metadata.json`
 
-## Project structure
+## Requirements
+- Python 3.11+
+- PyTorch, NumPy, h5py, and other dependencies (see `requirements.txt`)
 
-The directory structure of the project looks like this:
-```txt
-├── .github/                  # Github actions and dependabot
-│   ├── dependabot.yaml
-│   └── workflows/
-│       └── tests.yaml
-├── configs/                  # Configuration files
-├── data/                     # Data directory
-│   ├── processed
-│   └── raw
-├── dockerfiles/              # Dockerfiles
-│   ├── api.Dockerfile
-│   └── train.Dockerfile
-├── docs/                     # Documentation
-│   ├── mkdocs.yml
-│   └── source/
-│       └── index.md
-├── models/                   # Trained models
-├── notebooks/                # Jupyter notebooks
-├── reports/                  # Reports
-│   └── figures/
-├── src/                      # Source code
-│   ├── project_name/
-│   │   ├── __init__.py
-│   │   ├── api.py
-│   │   ├── data.py
-│   │   ├── evaluate.py
-│   │   ├── models.py
-│   │   ├── train.py
-│   │   └── visualize.py
-└── tests/                    # Tests
-│   ├── __init__.py
-│   ├── test_api.py
-│   ├── test_data.py
-│   └── test_model.py
-├── .gitignore
-├── .pre-commit-config.yaml
-├── LICENSE
-├── pyproject.toml            # Python project file
-├── README.md                 # Project README
-├── requirements.txt          # Project requirements
-├── requirements_dev.txt      # Development requirements
-└── tasks.py                  # Project tasks
-```
-
-
-Created using [mlops_template](https://github.com/SkafteNicki/mlops_template),
-a [cookiecutter template](https://github.com/cookiecutter/cookiecutter) for getting
-started with Machine Learning Operations (MLOps).
+## License
+MIT License
